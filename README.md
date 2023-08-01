@@ -13,7 +13,7 @@ Here is the simplest way to get RGB images and depth maps from Unreal Engine usi
 ## 4. Record your odom and other data to a rosbag
 
 
-## 5. setup AirSim to CV Mode
+## 5. Setup AirSim to CV Mode
 
 
 ## 6. Using a Python script to get the images and depth maps you want
