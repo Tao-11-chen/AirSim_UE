@@ -43,6 +43,24 @@ roslaunch airsim_ros_pkgs airsim_node.launch
 ```
 
 4. Now you should get this in WSL while running rostopic list:
+```console
+/airsim_node/drone_1/altimeter/barometer
+/airsim_node/drone_1/environment
+/airsim_node/drone_1/global_gps
+/airsim_node/drone_1/gps/gps
+/airsim_node/drone_1/imu/imu
+/airsim_node/drone_1/magnetometer/magnetometer
+/airsim_node/drone_1/odom_local_ned
+/airsim_node/drone_1/vel_cmd_body_frame
+/airsim_node/drone_1/vel_cmd_world_frame
+/airsim_node/gimbal_angle_euler_cmd
+/airsim_node/gimbal_angle_quat_cmd
+/airsim_node/origin_geo_point
+/rosout
+/rosout_agg
+/tf
+/tf_static
+```
 
 ## 4. Record your odom and other data to a rosbag
 
