@@ -63,12 +63,33 @@ roslaunch airsim_ros_pkgs airsim_node.launch
 ```
 
 ## 4. Record your odom and other data to a rosbag
-
+Run in WSL:
+```console
+rosbag record -O bag_name.bag /airsim_node/drone_1/odom_local_ned
+```
 
 ## 5. Setup AirSim to CV Mode
 
+**GT.json** in this repo is used to record Lidar or GroundTruth Odom to rosbag.
+
+**CVMode.json** in this repo is used to record images and depth maps.
+
+1. Rename current "settings.json" to "GT.json"
+  
+2. Copy CVMode.json to "C:\Users\User\Documents\AirSim" and rename it to "settings.json"
+
+3. Rerun Unreal Engine, now airsim is running in CVMode
 
 ## 6. Using a Python script to get the images and depth maps you want
+Run the script get_img_using_rosbag.py with config args. Here is an example:
 
+```console
+python3 get_img_using_rosbag.py --bag bag_name.bag --dir '/mnt/d/mydata'
+```
 
 ## 7. Extract other information from rosbag
+Run the script extract_data_from_rosbag.py with config args. Here is an example:
+
+```console
+python3 extract_data_from_rosbag.py
+```
