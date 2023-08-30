@@ -66,7 +66,10 @@ roslaunch airsim_ros_pkgs airsim_node.launch
 ```
 
 ## 4. Record your odom and other data to a rosbag
-Run in WSL:
+
+1.Using python API to control your drone or vehicle, an example is "control.py" in the folder.
+
+2.Run in WSL to record the trajectory:
 ```console
 rosbag record -O bag_name.bag /airsim_node/drone_1/odom_local_ned
 ```
