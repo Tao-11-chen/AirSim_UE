@@ -96,10 +96,12 @@ python3 get_img_using_rosbag.py --bag bag_name.bag --dir '/mnt/d/mydata'
 ## 7. Extract other information from rosbag
 Run the script extract_data_from_rosbag.py with config args. Here is an example:
 
+```console
+python3 extract_data_from_rosbag.py --bag bag_name.bag --out_file ./my_GT.txt
+```
+
 ## Contact me
 
 yuantao@xauat.edu.cn
 
-```console
-python3 extract_data_from_rosbag.py --bag bag_name.bag --out_file ./my_GT.txt
-```
+
