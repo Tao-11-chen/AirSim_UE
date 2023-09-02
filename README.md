@@ -36,7 +36,7 @@ Then, remember to install the same version of AirSim in Ubuntu
 
 **Here are the steps:**
 
-1. copy GT.json to "C:\Users\User\Documents\AirSim" and rename it to "settings.json".
+1. Copy GT.json to "C:\Users\User\Documents\AirSim" and rename it to "settings.json".
 
 2. Set the GameMode in Unreal Engine to "AirSimGameMode" and run.
 
