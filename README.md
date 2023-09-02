@@ -67,7 +67,7 @@ roslaunch airsim_ros_pkgs airsim_node.launch
 
 ## 4. Record your odom and other data to a rosbag
 
-1.Using python API to control your drone or vehicle, an example is "control.py" in the folder.
+1.Using python API to control your drone or vehicle, "simple.py" and "fly_circle.py" in the folder are two examples.
 
 2.Run in WSL to record the trajectory:
 ```console
@@ -96,6 +96,10 @@ python3 get_img_using_rosbag.py --bag bag_name.bag --dir '/mnt/d/mydata'
 ## 7. Extract other information from rosbag
 Run the script extract_data_from_rosbag.py with config args. Here is an example:
 
+## Contact me
+
+yuantao@xauat.edu.cn
+
 ```console
-python3 extract_data_from_rosbag.py
+python3 extract_data_from_rosbag.py --bag bag_name.bag --out_file ./my_GT.txt
 ```
