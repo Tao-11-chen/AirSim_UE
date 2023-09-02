@@ -4,7 +4,7 @@
 <img src="1.png" width="400" height="200">   <img src="2.jpg" width="400" height="200"> 
 <img src="3.jpg" width="400" height="200">   <img src="4.jpg" width="400" height="200"> 
 
-In this method, you can get most of the information from rosbag and use CVMode to get high FPS images and depth maps.
+In this method, you can get most of the information including lidar and GroundTruth trajectory from rosbag and use CVMode to get high FPS(whatever you want) images and depth maps.
 
 ## 1. Install Unreal Engine and compile AirSim for it
 Please refer to https://www.unrealengine.com/en-US/download and https://microsoft.github.io/AirSim/ to install them.
