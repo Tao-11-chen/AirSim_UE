@@ -11,6 +11,8 @@ Please refer to https://www.unrealengine.com/en-US/download and https://microsof
 
 For beginners, refer to https://zhuanlan.zhihu.com/p/619214564, which is a great Chinese tutorial.
 
+Then you need to find a good scene for your Unreal Engine.
+
 **Tips:** 
 
 Install it on Linux is not recommended because you can't create your Unreal Project there, it means you still need to use Windows to create the project and transfer it to the Linux system.
@@ -18,7 +20,7 @@ Install it on Linux is not recommended because you can't create your Unreal Proj
 Install it on a remote server is not recommended because any remote image transmission experience rendered through GPU is not good as far as I know.
 
 ## 2. Install a version of WSL on your Windows and install ROS
-This is the most convenient way to get information through ROS in Windows.
+WSL is the most convenient way to get information through ROS in Windows.
 
 Refer to https://learn.microsoft.com/en-us/windows/wsl/install to install WSL with Ubuntu on Windows.
 
