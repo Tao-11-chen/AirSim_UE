@@ -1,10 +1,10 @@
 # AirSim_UE
-***Here is one of the simplest ways to get RGB images and depth maps from Unreal Engine using AirSim.(For ROS users please refer to branch ros)***
+***Here is one of the simplest ways to get RGB images and depth maps from Unreal Engine using AirSim.(For ROS users please refer to ros branch)***
 
 <img src="1.png" width="400" height="200">   <img src="2.jpg" width="400" height="200"> 
 <img src="3.jpg" width="400" height="200">   <img src="4.jpg" width="400" height="200"> 
 
-In this method, you can get most of the information including lidar and GroundTruth trajectory from rosbag and use CVMode to get high FPS(whatever you want) images and depth maps.
+In this method, you can get GroundTruth trajectory from python and use CVMode to get high FPS(whatever you want) images and depth maps.
 
 ## 1. Install Unreal Engine and compile AirSim for it
 Please refer to https://www.unrealengine.com/en-US/download and https://microsoft.github.io/AirSim/ to install them.
@@ -56,7 +56,7 @@ It will generate a file GT.txt with format (timestamp, x, y, z, qx, qy, qz, qw)
 3. Rerun Unreal Engine, now airsim is running in CVMode
 
 ## 6. Using a Python script to get the images and depth maps you want
-Run the script get_img_using_rosbag.py with config args. Here is an example:
+Run the script get_img_using_traj.py with config args. Here is an example:
 
 ```console
 python3 get_img_using_traj.py --traj GT.txt --dir 'output_dir'
