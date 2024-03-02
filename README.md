@@ -39,8 +39,9 @@ Install it on a remote server is not recommended because any remote image transm
 
 2.Run the python file to record the trajectory:
 ```console
-rosbag record -O bag_name.bag /airsim_node/drone_1/odom_local_ned
+python record_traj.py
 ```
+It will generate a file GT.txt with format (timestamp, x, y, z, qx, qy, qz, qw)
 
 ## 5. Setup AirSim to CV Mode
 
@@ -58,7 +59,7 @@ rosbag record -O bag_name.bag /airsim_node/drone_1/odom_local_ned
 Run the script get_img_using_rosbag.py with config args. Here is an example:
 
 ```console
-python3 get_img_using_rosbag.py --bag bag_name.bag --dir '/mnt/d/mydata'
+python3 get_img_using_traj.py --traj GT.txt --dir 'output_dir'
 ```
 
 
